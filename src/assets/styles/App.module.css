@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Risque&display=swap');
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 8fr;
+  grid-template-areas: 
+  "header header"
+  "score cards";
+  font-family: 'Risque', cursive;
+  height: 100vh;
+}
+.header {
+  grid-area: header;
+  background-color: #323643;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__text {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 36px; 
+}
+.scoreboard {
+  grid-area: score;
+  background-color: #292B34;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+.scoreboard__text {
+  margin: 0;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+.cards {
+  grid-area: cards;
+  background-color: #606470;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+.cards > img {
+  cursor: pointer;
+}

@@ -1,9 +1,14 @@
-import './App.css';
+import AppStyles from './assets/styles/App.module.css';
+import CardsGrid from './components/CardsGrid';
+import Header from './components/Header';
+import Scoreboard from './components/Scoreboard';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      
+    <div className={AppStyles.grid}>
+      <Header />
+      <Scoreboard />
+      <CardsGrid />
     </div>
   );
 }
