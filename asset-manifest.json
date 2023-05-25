@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.78400caf.css",
+    "main.js": "/memory-game/static/js/main.29928970.js",
+    "static/media/hearts_queen.png": "/memory-game/static/media/hearts_queen.b66bc16af40ede05ee72.png",
+    "static/media/hearts_jack.png": "/memory-game/static/media/hearts_jack.86a4060e9f0aa8485957.png",
+    "static/media/clubs_jack.png": "/memory-game/static/media/clubs_jack.b57fcde6f27b3d8fff04.png",
+    "static/media/diamonds_queen.png": "/memory-game/static/media/diamonds_queen.a981679f92b8ba1f2db3.png",
+    "static/media/joker_red.png": "/memory-game/static/media/joker_red.c805f1d630d3f1b5e9c8.png",
+    "static/media/clubs_10.png": "/memory-game/static/media/clubs_10.fc7cc8908d11ac96690f.png",
+    "static/media/hearts_10.png": "/memory-game/static/media/hearts_10.df0af1c4fc92afde1231.png",
+    "index.html": "/memory-game/index.html",
+    "main.78400caf.css.map": "/memory-game/static/css/main.78400caf.css.map",
+    "main.29928970.js.map": "/memory-game/static/js/main.29928970.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78400caf.css",
+    "static/js/main.29928970.js"
+  ]
+}
