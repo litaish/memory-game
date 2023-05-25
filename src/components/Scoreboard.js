@@ -1,6 +1,6 @@
 import AppStyles from '../assets/styles/App.module.css';
 
-const Scoreboard = () => {
+const Scoreboard = ({ currentScore, bestScore }) => {
   return (
     <div className={AppStyles.scoreboard}>
       <p className={AppStyles.scoreboard__text}>Your Score: 0</p>
