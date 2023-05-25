@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AppStyles from './assets/styles/App.module.css';
 import CardsGrid from './components/CardsGrid';
 import Header from './components/Header';
@@ -9,6 +9,11 @@ const App = () => {
   const [currentScore, setCurrentScore] = useState(0);
   const [scores, setScores] = useState([0]);
   const [cards, setCards] = useState(initialCards);
+
+  // Shuffle cards on change of cards state
+  useEffect(() => {
+    setCards((prevCards) => shuffleSet(prevCards));
+  }, [cards])
 
   const setCardClicked = (cardId) => {
     setCards((prevCards) => {
@@ -51,9 +56,6 @@ const App = () => {
   }
 
   const handleCardClick = (e) => {
-    // On each click, set cards to shuffled cards
-    setCards((prevCards) => shuffleSet(prevCards));
-
     if (checkCardClicked(e.target.id)) {
       resetGame();
     } else {
