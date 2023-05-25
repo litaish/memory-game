@@ -46,7 +46,14 @@ const App = () => {
     setScores((prevScores) => [...prevScores, currentScore]);
   }
 
+  const shuffleSet = (set) => {
+    return set.sort(() => Math.random() - 0.5);
+  }
+
   const handleCardClick = (e) => {
+    // On each click, set cards to shuffled cards
+    setCards((prevCards) => shuffleSet(prevCards));
+
     if (checkCardClicked(e.target.id)) {
       resetGame();
     } else {
@@ -62,7 +69,9 @@ const App = () => {
         currentScore={currentScore}
         scores={scores}
       />
-      <CardsGrid cards={cards} handleCardClick={handleCardClick} />
+      <CardsGrid cards={cards}
+        handleCardClick={handleCardClick}
+      />
     </div>
   );
 }
