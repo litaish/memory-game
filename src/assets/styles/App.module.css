@@ -47,4 +47,8 @@
 }
 .cards > img {
   cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.cards > img:hover {
+  transform: scale(1.1);
 }
